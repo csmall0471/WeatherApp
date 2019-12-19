@@ -18,33 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Merry Christmas Maddy, Brooke and Kayli!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gR3-TF-wP2">
-                                <rect key="frame" x="85" y="533" width="665" height="45"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Christmas_Border_Frame_Transparent_PNG_Image" translatesAutoresizingMaskIntoConstraints="NO" id="7Np-4n-erC">
+                                <rect key="frame" x="0.0" y="74" width="834" height="1120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFE-jM-7Kq">
-                                <rect key="frame" x="336" y="898" width="190" height="71"/>
+                                <rect key="frame" x="257" y="906" width="274" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                <state key="normal" title="Continue"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Begin Quiz"/>
                                 <connections>
                                     <segue destination="WAR-Dp-i3J" kind="show" id="BEq-uy-Lo5"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GU7-HI-xa6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Page " largeTitleDisplayMode="always" id="Nin-aX-6z5"/>
+                    <navigationItem key="navigationItem" title="Merry Christmas" largeTitleDisplayMode="always" id="Nin-aX-6z5">
+                        <barButtonItem key="backBarButtonItem" title="Home Page" id="sJm-PM-4rS"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QId-lS-hYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1453" y="252"/>
+            <point key="canvasLocation" x="1600" y="357.7889447236181"/>
         </scene>
-        <!--View Controller-->
+        <!--Question One-->
         <scene sceneID="Uo9-jX-H7J">
             <objects>
                 <viewController id="WAR-Dp-i3J" sceneMemberID="viewController">
@@ -52,54 +50,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="85fb0819629a971cf804aad92cc3ffb1" translatesAutoresizingMaskIntoConstraints="NO" id="7DA-i5-FSb">
+                                <rect key="frame" x="0.0" y="74" width="834" height="1120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L3-GT-eSh">
-                                <rect key="frame" x="361" y="922" width="139" height="71"/>
+                                <rect key="frame" x="228" y="885" width="378" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="ghH-DE-XZ4" kind="show" id="TZI-k9-phz"/>
-                                </connections>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="49"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCy-HY-s2A">
-                                <rect key="frame" x="333" y="149" width="169" height="45"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="JmG-wa-L21">
+                                <rect key="frame" x="128" y="998" width="578" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <nil key="textColor"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCy-HY-s2A">
+                                <rect key="frame" x="180" y="235" width="474" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99273329973220825" green="0.017170669510960579" blue="0.0464206263422966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Raf-3q-qgq"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Question One" id="hkC-Ad-7Jz">
+                        <barButtonItem key="backBarButtonItem" title="Question One" id="5BS-Dn-xSh"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3b-ra-8Jw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2217" y="252"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="oW2-RQ-O49">
-            <objects>
-                <viewController id="ghH-DE-XZ4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oyR-cB-1gO">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kk-H4-S8r">
-                                <rect key="frame" x="333" y="137" width="173" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="XHJ-tB-jbR"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QGl-1r-fhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2898" y="245"/>
+            <point key="canvasLocation" x="2464.7482014388493" y="357.7889447236181"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bw1-Vl-UPH">
@@ -118,4 +102,8 @@
             <point key="canvasLocation" x="614" y="358"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="85fb0819629a971cf804aad92cc3ffb1" width="735" height="990"/>
+        <image name="Christmas_Border_Frame_Transparent_PNG_Image" width="447" height="600"/>
+    </resources>
 </document>
